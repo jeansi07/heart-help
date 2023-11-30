@@ -26,5 +26,8 @@
     "eslint-plugin-react-refresh": "^0.4.4",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/jeansi07/heart-help.git",
+  "license": "MIT"
 }

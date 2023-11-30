@@ -12,7 +12,7 @@ const OptionsScreen: React.FC = () => {
         const formData = new FormData();
         formData.append("file", file);
         const response = await (
-          await fetch("https://17ttz46s-5000.use2.devtunnels.ms/predict", {
+          await fetch("https://3876c02c-5000.use2.devtunnels.ms/predict", {
             method: "POST",
             body: formData,
           })
