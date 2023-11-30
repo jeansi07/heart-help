@@ -17,10 +17,9 @@ const OptionsScreen: React.FC = () => {
             body: formData,
           })
         ).json();
-        const health = response ? "Apto" : " No apto" 
+        const health = response.suitable ? "Apto" : " No apto";
 
-      
-        if (response.status === 200) {
+        if (response) {
           Swal.fire({
             title: `El paciente esta: ${health}`,
             showClass: {
@@ -28,15 +27,15 @@ const OptionsScreen: React.FC = () => {
                 animate__animated
                 animate__fadeInUp
                 animate__faster
-              `
+              `,
             },
             hideClass: {
               popup: `
                 animate__animated
                 animate__fadeOutDown
                 animate__faster
-              `
-            }
+              `,
+            },
           });
         }
       } else {
@@ -54,45 +53,29 @@ const OptionsScreen: React.FC = () => {
         <li className="list-items">
           <img className="icon-options" src="../../public/chevron-right.svg" />{" "}
           <a className="options" href="#">
-           Cardiopatia pulmonar
+            Cardiopatia pulmonar
           </a>
         </li>
         <li className="list-items">
-    
-          <img
-            className="icon-options"
-            src="../../public/chevron-right.svg"
-          />
+          <img className="icon-options" src="../../public/chevron-right.svg" />
           <a className="options" href="#">
-          Riesgo de compilacion postoperatoria
+            Riesgo de compilacion postoperatoria
           </a>
         </li>
         <li className="list-items">
-         
-          <img
-            className="icon-options"
-            src="../../public/chevron-right.svg"
-          />
+          <img className="icon-options" src="../../public/chevron-right.svg" />
           <a className="options" href="#">
-            Viabilidad  de procedimiento  en paciente 
+            Viabilidad de procedimiento en paciente
           </a>
         </li>
         <li className="list-items">
-          
-          <img
-            className="icon-options"
-            src="../../public/chevron-right.svg"
-          />
+          <img className="icon-options" src="../../public/chevron-right.svg" />
           <a className="options" href="#">
-            Hinpertencion pulmonar 
+            Hinpertencion pulmonar
           </a>
         </li>
         <li className="list-items">
-          
-          <img
-            className="icon-options"
-            src="../../public/chevron-right.svg"
-          />
+          <img className="icon-options" src="../../public/chevron-right.svg" />
           <a onClick={handleUpload} className="options" href="#">
             Resumen del paciente
           </a>
