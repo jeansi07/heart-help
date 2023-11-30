@@ -56,6 +56,7 @@
 }
 
 .container-options{
+  min-height: 85dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
