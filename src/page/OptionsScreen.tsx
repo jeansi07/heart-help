@@ -48,36 +48,42 @@ const OptionsScreen: React.FC = () => {
 
   return (
     <div className="container-options">
-      <h1>Seleccion de calculo</h1>
-      <ul className="list-options ">
-        <li className="list-items">
-          <img className="icon-options" src="../../public/chevron-right.svg" />{" "}
-          <a className="options" href="#">
-            Cardiopatia pulmonar
-          </a>
-        </li>
-        <li className="list-items">
+      <h1 className="text-4xl font-extrabold text-purple-700 mb-6">Seleccion de calculo</h1>
+      <ul className="bg-gradient-to-r from-pink-300 to-purple-500 p-6 rounded-md shadow-md">
+        <li className="py-3 border-b border-purple-400 transition duration-300 hover:bg-purple-200 flex">
           <img className="icon-options" src="../../public/chevron-right.svg" />
           <a className="options" href="#">
-            Riesgo de compilacion postoperatoria
+            <span className="text-lg font-semibold">Cardiopatia pulmonar</span>
           </a>
         </li>
-        <li className="list-items">
+        <li className="py-3 border-b border-purple-400 transition duration-300 hover:bg-purple-200 flex">
           <img className="icon-options" src="../../public/chevron-right.svg" />
           <a className="options" href="#">
-            Viabilidad de procedimiento en paciente
+            <span className="text-lg font-semibold">
+              Riesgo de compilacion postoperatoria
+            </span>
           </a>
         </li>
-        <li className="list-items">
+        <li className="py-3 border-b border-purple-400 transition duration-300 hover:bg-purple-200 flex">
           <img className="icon-options" src="../../public/chevron-right.svg" />
           <a className="options" href="#">
-            Hinpertencion pulmonar
+            <span className="text-lg font-semibold">
+              Viabilidad de procedimiento en paciente
+            </span>
           </a>
         </li>
-        <li className="list-items">
+        <li className="py-3 border-b border-purple-400 transition duration-300 hover:bg-purple-200 flex">
+          <img className="icon-options" src="../../public/chevron-right.svg" />
+          <a className="options" href="#">
+            <span className="text-lg font-semibold">
+              Hinpertencion pulmonar
+            </span>
+          </a>
+        </li>
+        <li className="py-3 border-b border-purple-400 transition duration-300 hover:bg-purple-200 flex">
           <img className="icon-options" src="../../public/chevron-right.svg" />
           <a onClick={handleUpload} className="options" href="#">
-            Resumen del paciente
+            <span className="text-lg font-semibold">Resumen del paciente</span>
           </a>
         </li>
       </ul>
